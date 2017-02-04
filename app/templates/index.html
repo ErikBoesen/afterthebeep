@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Leave a message after the beep.</title>
+    <title>Leave a message</title>
 </head>
 <body>
     {% with messages = get_flashed_messages() %}
@@ -22,8 +22,5 @@
         {% endfor %}<br>
         <input type="submit" value="Say">
     </form>
-    <audio controls autoplay>
-        <source src="beep.wav" type="audio/wav">
-    </audio>
 </body>
 </html>
